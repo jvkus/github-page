@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run analyze`
+
+Run after running `npm run build`. Analyzes bundle size to understand where code bloat is coming from.
+
 ### `npm start`
 
 Runs the app in the development mode.\

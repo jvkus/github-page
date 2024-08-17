@@ -1,24 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./Header";
+import InfoBlock from './components/InfoBlock.js';
+import LinkHub from './components/LinkHub';
+import TechStack from './components/TechStack.js';
+import Timeline from './components/Timeline.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Hi
-          I'm Joanna Kus
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This website is in progress. Pardon the dust.
-        </a>
-      </header>
-      <body>
+      <Header />
+      <div>
         I'm a software engineer with 3 years of experience.
 
         Contacts here. List email but hide it so robots can't scrape it.
@@ -50,36 +41,23 @@ function App() {
         Python
         Java
 
+        Current projects
+        This website
+
         Off the Clock
 
         List of interests here
 
-        <a
-          href="https://example.com"
-        >
-          Resume
-        </a>
-        <a
-          href="https://example.comhttps://www.linkedin.com/in/joanna-kus-330724162/"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/jvkus"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://infosec.exchange/@jvkus"
-        >
-          Mastodon
-        </a>
-        <a
-          href="https://example.com"
-        >
-          Blog link (Coming soon)
-        </a>
-      </body>
+        
+      </div>
+      <TechStack />
+      <Timeline />
+      <InfoBlock />
+      <InfoBlock />
+      <LinkHub />
+      <footer>
+        placeholder
+      </footer>
     </div>
   );
 }
