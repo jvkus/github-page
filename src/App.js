@@ -4,53 +4,32 @@ import InfoBlock from './components/InfoBlock.js';
 import LinkHub from './components/LinkHub';
 import TechStack from './components/TechStack.js';
 import Timeline from './components/Timeline.js';
+import { techStackData } from './data/techstack_data.js';
+
+import { ReactComponent as AWSLogo } from './assets/aws-logo.svg';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <div>
+        <AWSLogo />
         I'm a software engineer with 3 years of experience.
-
-        Contacts here. List email but hide it so robots can't scrape it.
-
-        Put timeline here of past experience.
-
-        Now - Icons
-          - Building new things
-          - Contributing to what open source projects?
-
-        3 years at RetailMeNot - Icons of programming languages used
-          - Some bullets about what I did
-
-        Graduated from Elmhurst University
-          - University projects. links. screenshots?
-
-        iD Tech experience 3 - Programming languages
-          - bullets
-
-        iD Tech experience 2
-          - bullets
-
-        iD Tech experience 1
-          - bullets 
-
+        <br />
         Tech Stack
         PHP
         React.js
         Python
         Java
-
+        <br />
         Current projects
         This website
-
+        <br />
         Off the Clock
 
-        List of interests here
-
-        
+        List of interests here       
       </div>
-      <TechStack />
+      <TechStack data={techStackData} />
       <Timeline />
       <InfoBlock />
       <InfoBlock />

@@ -1,3 +1,5 @@
+// TODO: code this properly
+
 function LinkHubChild() {
     return (
         <div>
