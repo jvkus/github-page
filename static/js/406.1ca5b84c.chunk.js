@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[406],{406:(e,s,a)=>{e.exports=a.p+"static/media/davinciresolve-logo.d4d484a71137526699d0.svg"}}]);

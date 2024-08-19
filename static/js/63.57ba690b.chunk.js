@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[63],{63:(e,s,a)=>{e.exports=a.p+"static/media/okta-logo.6a0964c02652ccebc62e.svg"}}]);

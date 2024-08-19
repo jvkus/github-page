@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[384],{3:(e,s,a)=>{e.exports=a.p+"static/media/postgresql-logo.7bc394e86ea1f692d59a.svg"}}]);
