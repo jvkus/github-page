@@ -23,11 +23,10 @@ export default function Contact() {
     function handleClick() {
         if (notVisible) {
             setContactInfo(email);
-            setNotVisible(false);
         } else {
             setContactInfo(maskedEmail);
-            setNotVisible(true);
         }
+        setNotVisible(!notVisible);
     }
 
     return (

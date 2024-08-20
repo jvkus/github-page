@@ -1,5 +1,6 @@
 // Built with reference to Florin Pop
 // https://www.florin-pop.com/blog/2019/04/how-to-create-a-timeline-with-react/
+import './Timeline.css';
 import { timelineData } from "../data/timeline_data";
 import TechStack from "./TechStack";
 
@@ -14,7 +15,7 @@ const TimelineItem = ({ data }) => (
             <time>{data.date}</time>
             {data.techTags && (
                 <span>
-                    <TechStack data={data.techTags} />
+                    <TechStack tags={data.techTags} imageStyle={{width: '20px'}} />
                 </span>
             )}
             <p>{data.text}</p>

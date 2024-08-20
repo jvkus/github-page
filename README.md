@@ -1,3 +1,6 @@
+TODO: Write proper documentation.
+TODO: Create skeleton for use by others. :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

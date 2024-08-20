@@ -1,39 +1,19 @@
-// TODO: code this properly
+import './LinkHub.css';
+import { linkHubData } from "../data/linkhub_data";
 
-function LinkHubChild() {
-    return (
-        <div>
-            <a
-            href="https://example.com"
-            >
-            Resume
-            </a>
-            <a
-            href="https://www.linkedin.com/in/joanna-kus-330724162/"
-            >
-            LinkedIn
-            </a>
-            <a
-            href="https://github.com/jvkus"
-            >
-            GitHub
-            </a>
-            <a
-            href="https://infosec.exchange/@jvkus"
-            >
-            Mastodon
-            </a>
-            <a
-            href="https://example.com"
-            >
-            Blog link (Coming soon)
-            </a>
-        </div>
-    );
-}
+// TODO: Style this nicely
 
 export default function LinkHub() {
+    const linkHubItems = linkHubData.map((link, idx) => 
+        <a href={link.url} key={idx}>
+            <img src={require(`../assets/${link.img}`)} alt={`${link.title} logo`} />
+            {link.title}
+        </a>
+    );
+
     return (
-        <LinkHubChild />
+        <div className='linkHub'>
+            {linkHubItems}
+        </div>
     );
 }

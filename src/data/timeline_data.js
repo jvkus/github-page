@@ -40,7 +40,7 @@ export const timelineData = [
             'css',
             'c#',
             'javascript',
-            'asp.net'
+            'aspnet'
         ],
         link: {
             url: 'https://github.com/jvkus/FacultyActivityReportingSystem',

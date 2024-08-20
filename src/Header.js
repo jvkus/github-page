@@ -6,8 +6,8 @@ export default function Header() {
         <header>
             <NavBar />
             <p>
-                Hi
-                I'm Joanna Kus
+                Hi<br />
+                I'm Joanna Kus<br />
                 This website is in progress. Pardon the dust.
             </p>
             <Contact />
