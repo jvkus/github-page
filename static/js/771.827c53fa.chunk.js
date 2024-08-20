@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[771],{771:(s,e,a)=>{s.exports=a.p+"static/media/graphql-logo.14267f2ddb307badb38d.svg"}}]);

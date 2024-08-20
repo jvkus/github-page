@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[871],{871:(s,e,a)=>{s.exports=a.p+"static/media/aws-logo.b6a223a18ab9f53bbbf7.svg"}}]);

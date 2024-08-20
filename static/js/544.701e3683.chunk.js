@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[544],{544:(e,s,t)=>{e.exports=t.p+"static/media/bootstrap-logo.1f1d6bd3811dece9cf8e.svg"}}]);

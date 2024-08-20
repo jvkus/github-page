@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpersonal_site=self.webpackChunkpersonal_site||[]).push([[273],{273:(e,s,a)=>{e.exports=a.p+"static/media/mastodon-logo.3c4e4c48dfc87e1aaac3.svg"}}]);
