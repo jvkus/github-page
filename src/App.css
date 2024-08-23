@@ -1,20 +1,45 @@
-html {
-  white-space: pre-wrap;
+:root {
+  --color1: #37d1ab;
+  --color2: #393939;
+  --textColor1: #000000;
+  --textColor2: #491013;
+  --linkColor1: #c7b40c;
+  --linkColorHover1: #031d91;
+  --linkColorActive1: #31b422;
 }
 
 .App {
+  white-space: pre-wrap;
   text-align: center;
+  font-family: 'Chivo Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.header {
-  border: 1px black;
-  margin: 20px;
+header p {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
 }
 
-.infoBlock {
+title {
+  display: block;
+  width: 100%;
+}
+
+.topBlock {
+  background-image: image('./assets/header-background-joshua-sortino-unsplash.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.checkTheseOut {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
+  text-align: center;
 }
 
 .linkHub {
@@ -23,13 +48,25 @@ html {
   background-color: bisque;
 }
 
-.techStack {
+.techStackBlock {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.techStackBlock img {
+  margin: 7px;
+  vertical-align: middle;
 }
 
 .techStack img {
   margin: 2px;
-  background-color: green;
+  vertical-align: middle;
+}
+
+.footer {
+  padding: 5px;
 }

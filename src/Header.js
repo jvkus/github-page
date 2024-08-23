@@ -6,9 +6,11 @@ export default function Header() {
         <header>
             <NavBar />
             <p>
-                Hi<br />
-                I'm Joanna Kus<br />
-                This website is in progress. Pardon the dust.
+                Hi. I'm Joanna Kus.<br />
+                I'm a software engineer with three years of backend and scripting 
+                experience. I'm working on stepping into a more security-focused 
+                role. This website is still in progress. Check back later; I 
+                promise it'll be cool.
             </p>
             <Contact />
         </header>

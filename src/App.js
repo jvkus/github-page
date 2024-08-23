@@ -1,30 +1,51 @@
+import './assets/fonts.css'
 import './App.css';
 import Header from "./Header";
-import InfoBlock from './components/InfoBlock';
 import LinkHub from './components/LinkHub';
 import TechStack from './components/TechStack';
 import Timeline from './components/Timeline';
 import { techStackData } from './data/techstack_data';
 
+
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className='infoBlock'>
-        I'm a software engineer with 3 years of experience.
-        <br></br>
-        Current projects <br />
-        This website <br />
-        <br></br>
-        Off the Clock
-        <br></br>
-        List of interests here       
-        <LinkHub />
-        <TechStack tags={techStackData} imageStyle={{width: '50px'}} />
+      <div className='topBlock'>
+        <Header />
+
+        <div className='checkTheseOut'>
+          <title>Check out</title>
+          <div className='checkOut1'>
+            my projects
+            <ul>
+              <li>coming soon</li>
+            </ul>
+          </div>
+          <div className='checkOut2'>
+            my interests
+            <ul>
+              <li>coming soon</li>
+            </ul>
+          </div>
+          <div className='checkOut3'>
+            my links
+            <LinkHub />
+          </div>
+        </div>
+
+        <div className='techStackBlock'>
+          <title>Tech Stack</title>
+          <TechStack tags={techStackData} imageStyle={{width: '50px'}} />
+        </div>
       </div>
-      <Timeline />
-      <InfoBlock />
-      <InfoBlock />
+
+      <div className='middleBlock'>
+        <title>
+          What's my story?
+        </title>
+        <Timeline />
+      </div>
+      
       <footer>
         placeholder
       </footer>

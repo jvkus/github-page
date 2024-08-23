@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './Contact.css';
 
 const email = 'joannavkus+github@gmail.com';
 const maskCharacter = '•';
@@ -31,8 +32,8 @@ export default function Contact() {
 
     return (
         <div onClick={handleClick}>
-            <p>
-                Reveal email
+            <p className='contactDescription'>
+                Want to get in touch? Click to reveal my email.
             </p>
             {contactInfo}
         </div>

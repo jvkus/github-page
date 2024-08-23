@@ -1,4 +1,22 @@
 .linkHub img {
-    width: 15px;
+    width: 30px;
     margin: 5px;
+}
+
+.linkHub a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkHub a:link a:visited {
+    color: var(--linkColor1);
+}
+
+.linkHub a:hover {
+    color: var(--linkColorHover1);
+}
+
+.linkHub a:active {
+    color: var(--linkColorActive1);
 }
