@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.79f738d5.css",
-    "main.js": "/static/js/main.d7eacadf.js",
+    "main.css": "/static/css/main.0bf06528.css",
+    "main.js": "/static/js/main.433fc6c5.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
+    "static/media/header-background-joshua-sortino-unsplash.jpg": "/static/media/header-background-joshua-sortino-unsplash.2c47cea3d1952c1b47f1.jpg",
     "static/media/linux-logo.svg": "/static/media/linux-logo.0cb7bf4e5cb9ed5e2333.svg",
     "static/media/davinciresolve-logo.svg": "/static/media/davinciresolve-logo.d4d484a71137526699d0.svg",
     "static/media/linux-logo.png": "/static/media/linux-logo.e45fe43cc1b841ce3296.png",
@@ -50,12 +51,12 @@
     "index.html": "/index.html",
     "static/media/premiere-logo.svg": "/static/media/premiere-logo.e5da4087b14474f6104c.svg",
     "static/media/qtcreator-logo.svg": "/static/media/qtcreator-logo.31d6cfe0d16ae931b73c.svg",
-    "main.79f738d5.css.map": "/static/css/main.79f738d5.css.map",
-    "main.d7eacadf.js.map": "/static/js/main.d7eacadf.js.map",
+    "main.0bf06528.css.map": "/static/css/main.0bf06528.css.map",
+    "main.433fc6c5.js.map": "/static/js/main.433fc6c5.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79f738d5.css",
-    "static/js/main.d7eacadf.js"
+    "static/css/main.0bf06528.css",
+    "static/js/main.433fc6c5.js"
   ]
 }
