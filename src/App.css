@@ -1,40 +1,67 @@
 :root {
-  --color1: #37d1ab;
+  --color1: #2f3a29;
   --color2: #393939;
   --textColor1: #000000;
-  --textColor2: #491013;
-  --linkColor1: #c7b40c;
-  --linkColorHover1: #031d91;
-  --linkColorActive1: #31b422;
+  --textColor2: #ffffff;
+
+  --linkColor1: #d8bf92;
+  --linkColorHover1: #ff009d;
+  --linkColorActive1: #20a7e6;
+
+  --linkColor2: #fffcdc;
+  --linkColorHover2: #ffceec;
+  --linkColorActive2: #c1ddeb;
 }
 
 .App {
   white-space: pre-wrap;
   text-align: center;
+
   font-family: 'Chivo Mono', monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+
+  scroll-behavior: smooth;
 }
 
 header p {
-  max-width: 700px;
   margin: 0 auto;
-  padding: 50px 0 20px 0;
+  padding-bottom: 20px;
+  max-width: 700px;
 }
 
 title {
-  display: block;
   width: 100%;
+
+  display: block;
 }
 
 .topBlock {
-  background-image: image('./assets/header-background-joshua-sortino-unsplash.jpg');
-  background-size: contain;
+  padding: 40px;
+
+  color: var(--textColor2);
+  background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
+.topBlockContent {
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 30px;
+
+  line-height: 150%;
+  text-shadow: 0 1px 3px black;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7px);
+}
+
 .checkTheseOut {
+  padding: 20px;
+  width: 100%;
+
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -42,22 +69,27 @@ title {
   text-align: center;
 }
 
+.checkOut1, .checkOut2, .checkOut3 {
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
 .linkHub {
   display: flex;
   flex-direction: column;
-  background-color: bisque;
 }
 
 .techStackBlock {
+  padding: 0 30px;
+
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 30px;
 }
 
-.techStackBlock img {
+.techStackBlock .techStack img {
   margin: 7px;
   vertical-align: middle;
 }
@@ -67,6 +99,11 @@ title {
   vertical-align: middle;
 }
 
+.middleBlock {
+  margin: 30px 0;
+}
+
 .footer {
-  padding: 5px;
+  margin: 30px;
+  padding: 25px;
 }

@@ -1,10 +1,8 @@
-import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 
 export default function Header() {
     return (
         <header>
-            <NavBar />
             <p>
                 Hi. I'm Joanna Kus.<br />
                 I'm a software engineer with three years of backend and scripting 

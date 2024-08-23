@@ -1,6 +1,6 @@
 .linkHub img {
     width: 30px;
-    margin: 5px;
+    margin: 5px 15px 5px 5px;
 }
 
 .linkHub a {
@@ -9,14 +9,14 @@
     text-decoration: none;
 }
 
-.linkHub a:link a:visited {
-    color: var(--linkColor1);
+.linkHub a:link, .linkHub a:visited {
+    color: var(--linkColor2);
 }
 
-.linkHub a:hover {
-    color: var(--linkColorHover1);
+.linkHub a:hover, .linkHub a:focus {
+    color: var(--linkColorHover2);
 }
 
 .linkHub a:active {
-    color: var(--linkColorActive1);
+    color: var(--linkColorActive2);
 }

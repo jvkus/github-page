@@ -9,7 +9,7 @@ export const linkHubData = [
     {
         title: 'LinkedIn',
         img: 'linkedin-logo.png',
-        url: ''
+        url: 'https://www.linkedin.com/in/joanna-kus-330724162/'
     },
     {
         title: 'GitHub',
@@ -22,7 +22,7 @@ export const linkHubData = [
         url: 'https://infosec.exchange/@jvkus'
     },
     {
-        title: 'Blog [Coming Soon]',
+        title: 'Blog [soon]',
         img: 'blog-icon.png',
         url: 'https://example.com'
     }
