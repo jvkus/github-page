@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f34b0dc.css",
+    "main.css": "/static/css/main.c04cd287.css",
     "main.js": "/static/js/main.e243a835.js",
     "static/js/453.f1fb8f26.chunk.js": "/static/js/453.f1fb8f26.chunk.js",
     "static/media/header-background-joshua-sortino-unsplash.jpg": "/static/media/header-background-joshua-sortino-unsplash.2c47cea3d1952c1b47f1.jpg",
@@ -51,12 +51,12 @@
     "index.html": "/index.html",
     "static/media/premiere-logo.svg": "/static/media/premiere-logo.e5da4087b14474f6104c.svg",
     "static/media/qtcreator-logo.svg": "/static/media/qtcreator-logo.31d6cfe0d16ae931b73c.svg",
-    "main.3f34b0dc.css.map": "/static/css/main.3f34b0dc.css.map",
+    "main.c04cd287.css.map": "/static/css/main.c04cd287.css.map",
     "main.e243a835.js.map": "/static/js/main.e243a835.js.map",
     "453.f1fb8f26.chunk.js.map": "/static/js/453.f1fb8f26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f34b0dc.css",
+    "static/css/main.c04cd287.css",
     "static/js/main.e243a835.js"
   ]
 }
