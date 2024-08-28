@@ -19,19 +19,33 @@ function App() {
           <div className='checkTheseOut'>
             <title>Check out</title>
             <div className='checkOut1'>
-              my projects
+              my projects.
               <ul>
-                <li>coming soon</li>
+                <li>
+                  <a href='https://github.com/jvkus/jvkus.github.io'>
+                    This website
+                  </a>
+                </li>
+                <li>
+                  More to come
+                </li>
               </ul>
             </div>
             <div className='checkOut2'>
-              my interests
+              my interests.
               <ul>
-                <li>coming soon</li>
+                <li>Birding</li>
+                <li>Hydroponics</li>
+                <li>Consumer research</li>
+                <li>Painting</li>
+                <li>Privacy and cyber security</li>
+                <li>Skiing</li>
+                <li>Visual effects</li>
+                <li>Jazz accordion</li>
               </ul>
             </div>
             <div className='checkOut3'>
-              my links
+              my links.
               <LinkHub />
             </div>
           </div>

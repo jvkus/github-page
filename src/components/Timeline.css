@@ -11,7 +11,8 @@
     position: absolute;
     left: calc(50% - 2px);
     width: 4px;
-    height: 100%;
+    height: calc(100% - 120px);
+    margin-top: 60px;
 }
 
 .timeline-item {
@@ -20,8 +21,7 @@
     margin-right: 30px;
     position: relative;
     margin: 10px 0;
-    width: 50%;
-    right: 27px;
+    width: calc(50% - 27px);
 }
 
 .timeline-item:nth-child(odd) {
@@ -29,7 +29,6 @@
     justify-content: flex-start;
     margin-left: 30px;
     margin-right: 0;
-    left: 27px;
 }
 
 .timeline-item-content {
@@ -86,6 +85,10 @@
     right: 5px;
 }
 
+.timeline-title {
+    font-weight: bold;
+}
+
 .timeline-item-content time {
     color: #777;
     font-size: 12px;
@@ -111,7 +114,7 @@
 
 .timeline-item-content .circle {
     background-color: #fff;
-    border: 3px solid #e17b77;
+    border: 3px solid var(--color2);
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 10px);
