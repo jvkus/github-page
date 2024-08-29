@@ -4,7 +4,6 @@
     border-radius: 5px;
 
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-evenly;
 
     font-weight: 700;
@@ -25,12 +24,6 @@
     padding: 0 50px;
 }
 
-@media (max-width: 767px) {
-    .navBar ul {
-        justify-content: space-around;
-    }
-}
-
 .navBar a {
     text-decoration: none;
 }
@@ -45,4 +38,20 @@
 
 .navBar a:active {
     color: var(--linkColorActive1);
+}
+
+@media (max-width: 650px) {
+    .navBar {
+        height: auto;
+    }
+
+    .navBar ul {
+        margin: 10px;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .navBar ul li {
+        padding: 10px 0;
+    }
 }

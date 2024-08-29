@@ -6,17 +6,5 @@
 .linkHub a {
     display: flex;
     align-items: center;
-    text-decoration: none;
-}
-
-.linkHub a:link, .linkHub a:visited {
-    color: var(--linkColor2);
-}
-
-.linkHub a:hover, .linkHub a:focus {
-    color: var(--linkColorHover2);
-}
-
-.linkHub a:active {
-    color: var(--linkColorActive2);
+    text-decoration: dotted underline;
 }

@@ -4,7 +4,11 @@ export const timelineData = [
     {
         title: 'Open source contributions',
         date: 'Now',
-        text: 'What projects?'
+        text: 'What projects?',
+        techTags: [
+            'react',
+            'javascript'
+        ]
     },
     {
         title: 'Joined RetailMeNot as a Software Engineer',
@@ -21,11 +25,6 @@ export const timelineData = [
             'kubernetes',
             'sql'
         ]
-    },
-    {
-        title: 'Received job offer from Sanford Health for Associate IT Security Engineer role',
-        date: 'May 2021',
-        text: 'Turned it down in order to gain software engineering experience before pursuing security.',
     },
     {
         title: 'Graduated from Elmhurst University with Bachelor\'s degree',

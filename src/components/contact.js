@@ -32,10 +32,14 @@ export default function Contact() {
 
     return (
         <div onClick={handleClick}>
-            <p className='contactDescription'>
-                Want to get in touch? Click to reveal my email.
-            </p>
-            {contactInfo}
+            <div className='contactDescription'>
+                <span>
+                    Want to get in touch? Click to reveal my email.
+                </span>
+                <div className='contactInfo'>
+                    {contactInfo}
+                </div>
+            </div>
         </div>
     );
 }

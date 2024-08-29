@@ -7,6 +7,7 @@ import TechStack from './components/TechStack';
 import Timeline from './components/Timeline';
 import { techStackData } from './data/techstack_data';
 
+// TODO: Add accessibility
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <div className='checkTheseOut'>
             <title>Check out</title>
             <div className='checkOut1'>
-              my projects.
+              <title>my projects.</title>
               <ul>
                 <li>
                   <a href='https://github.com/jvkus/jvkus.github.io'>
@@ -32,20 +33,20 @@ function App() {
               </ul>
             </div>
             <div className='checkOut2'>
-              my interests.
+              <title>my interests.</title>
               <ul>
                 <li>Birding</li>
                 <li>Hydroponics</li>
                 <li>Consumer research</li>
                 <li>Painting</li>
-                <li>Privacy and cyber security</li>
+                <li>Privacy and security</li>
                 <li>Skiing</li>
                 <li>Visual effects</li>
                 <li>Jazz accordion</li>
               </ul>
             </div>
             <div className='checkOut3'>
-              my links.
+              <title>my links.</title>
               <LinkHub />
             </div>
           </div>
@@ -65,7 +66,9 @@ function App() {
       </div>
       
       <footer>
-        placeholder
+        <p>
+          placeholder
+        </p>
       </footer>
     </div>
   );
