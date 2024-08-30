@@ -1,11 +1,16 @@
+/* Created with reference to Jatin Sharma's code
+    https://codepen.io/j471n/pen/vYJaLvm */
+/* TODO: credit that properly on web page */
+
 .timeline {
 	display: flex;
 	flex-direction: column;
 	position: relative;
 }
 
+/* Line in the middle */
 .timeline::after {
-	background-color: var(--color2);
+	background-color: var(--timelineColor);
 	content: '';
 	position: absolute;
 	left: calc(50% - 2px);
@@ -44,6 +49,7 @@
 	text-align: right;
 }
 
+/* Arrows pointing to timeline */
 .timeline-item-content::after {
 	content: ' ';
 	background-color: #fff;
@@ -84,6 +90,7 @@
 	right: 5px;
 }
 
+/* Style common bits of the item contents */
 .timeline-title {
 	font-weight: bold;
 }
@@ -122,19 +129,19 @@
 	font-size: 12px;
 }
 
-.timeline-item-content .circle {
+.circle {
 	background-color: #fff;
-	border: 3px solid var(--color2);
+	border: 3px solid var(--timelineColor);
 	border-radius: 50%;
 	position: absolute;
-	top: calc(50% - 10px);
+	top: calc(50% - 13px);
 	right: -40px;
 	width: 20px;
 	height: 20px;
 	z-index: 100;
 }
 
-.timeline-item:nth-child(odd) .timeline-item-content .circle {
+.timeline-item:nth-child(odd) .circle {
 	right: auto;
 	left: -40px;
 }
@@ -145,29 +152,83 @@
 	}
 }
 
+/* Alternate timeline layout for smaller screens */
 @media only screen and (max-width: 767px) {
-    .timeline::after {
-        margin-top: 80px;
-        height: calc(100% - 150px);
-    }    
+    .timeline-item-content {
+        width: 100%;
+    }
 
-	.timeline-item-content,
+    .circle {
+        right: -50px;
+    }
+
+    .timeline-item:nth-child(odd) .circle {
+        left: -50px;
+    }
+
+    /* Curvy borders */
+    .timeline-item {    /* All left elements */
+        margin: -5px 30px 0 30px;
+        padding: 35px;
+        width: calc(100% - 200px);
+
+        top: 0;
+
+        border-style: solid;
+        border-color: var(--timelineColor);
+        border-width: 5px 5px 5px 0;
+        border-radius: 0 50px 50px 0;
+    }
+
+    .timeline-item:nth-child(odd) { /* All right elements */
+        border-width: 5px 0 5px 5px;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .timeline-item:first-child { /* First element */
+        border-style: solid dotted;
+        border-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .timeline-item:last-child { /* Last element */
+        border-style: solid dotted;
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .timeline::before { /* Trailing off dotted line */
+        content: '';
+        border-style: none none none dotted;
+        border-color: var(--timelineColor);
+        border-width: 5px;
+        width: calc(100% - 65px);
+        height: 80px;
+
+        align-self: center;
+    }
+
+    /* Align all card contents in alternating style */
+    .timeline-item-content {
+        text-align: right;
+    }
+
 	.timeline-item:nth-child(odd) .timeline-item-content {
-		padding: 15px 10px;
-		text-align: center;
-		align-items: center;
+		text-align: left;
 	}
 
-	.timeline-item-content .tag {
-		width: calc(100% - 10px);
-		text-align: center;
-	}
+    .timeline-item {
+        align-self: flex-end;
+    }
 
-	.timeline-item-content a {
-		text-decoration: underline;
-	}
+    .timeline-item:nth-child(odd) {
+        align-self: flex-start;
+    }
 
-	.timeline-item-content a::after {
-		display: none;
-	}
+    /* Delete center line */
+    .timeline::after {
+        display: none;
+    }
 }
