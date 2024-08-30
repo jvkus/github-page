@@ -11,6 +11,8 @@
 	--linkColor2: #fffcdc;
 	--linkColorHover2: #ffceec;
 	--linkColorActive2: #c1ddeb;
+
+    --timelineColor: #597252;
 }
 
 .App {
@@ -43,6 +45,7 @@ ul {
 }
 
 a {
+    text-decoration: dotted underline;
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.25rem;
 }
@@ -67,10 +70,6 @@ a {
 
 	background-color: rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(7px);
-}
-
-.topBlockContent a {
-	text-decoration: dotted underline;
 }
 
 .topBlockContent a:active {
@@ -136,12 +135,11 @@ a {
 	vertical-align: middle;
 }
 
-.middleBlock {
-	margin: 30px 0;
-}
-
-.timeline {
-    margin: 20px 0;
+.middleBlock title {
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -165,6 +163,13 @@ footer p {
 }
 
 @media (max-width: 650px) {
+    .middleBlock title {
+        padding: 0;
+        height: 0;
+        position: relative;
+        top: 40px;
+    }
+
     .topBlock {
         padding: 20px 20px 40px 20px;
     }
@@ -172,5 +177,9 @@ footer p {
     .checkTheseOut {
         flex-direction: column;
         align-items: center;
+    }
+
+    .timeline {
+        margin-top: 0;
     }
 }
