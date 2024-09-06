@@ -4,6 +4,7 @@ export default function TechStack({ tags, imageStyle }) {
         <img 
             src={require(`../assets/${tag}-logo.png`)}
             alt={`${tag} logo`}
+            title={`${tag}`}
             style={imageStyle}
             key={idx}
         />

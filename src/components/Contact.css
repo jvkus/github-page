@@ -17,7 +17,7 @@ span {
     display: block;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 767px) {
     .checkTheseOut {
         flex-direction: column;
         align-items: center;

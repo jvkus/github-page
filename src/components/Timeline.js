@@ -44,3 +44,14 @@ export default function Timeline() {
         </div>
     );
 }
+
+export function setTimelineLineHeight() {
+    const timelineLineElement = document.querySelector('.timeline::after');
+
+    const containerHeight = document.getElementById('timeline').offsetHeight;
+    const firstItemHeightHalf = document.querySelector('.timeline-item:first-child').offsetHeight / 2;
+    const lastItemHeightHalf = document.querySelector('.timeline-item:last-child').offsetHeight / 2;
+
+    timelineLineElement.style.height = containerHeight - firstItemHeightHalf - lastItemHeightHalf;
+    timelineLineElement.style.margin_top = firstItemHeightHalf;
+}

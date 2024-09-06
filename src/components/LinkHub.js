@@ -1,8 +1,6 @@
 import './LinkHub.css';
 import { linkHubData } from "../data/linkhub_data";
 
-// TODO: Style this nicely
-
 export default function LinkHub() {
     const linkHubItems = linkHubData.map((link, idx) => 
         <a href={link.url} key={idx}>

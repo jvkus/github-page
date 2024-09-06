@@ -4,7 +4,7 @@ export const timelineData = [
     {
         title: 'Open source contributions',
         date: 'Now',
-        text: 'What projects?',
+        text: 'Working on releasing personal website as a free template and finding security projects to work on, in between Security+ certification studying.',
         techTags: [
             'react',
             'javascript'
@@ -13,7 +13,7 @@ export const timelineData = [
     {
         title: 'Joined RetailMeNot as a Software Engineer',
         date: 'July 2021',
-        text: 'Job summary here',
+        text: 'Worked with a variety of technologies as part of website backend work, and did a lot of scripting to support legacy functionality. Built internal tooling as well to support cash back operations.',
         techTags: [
             'aws',
             'python',
@@ -21,7 +21,9 @@ export const timelineData = [
             'javascript',
             'php',
             'laravel',
+            'graphql',
             'datadog',
+            'okta',
             'kubernetes',
             'sql'
         ]
@@ -37,7 +39,7 @@ export const timelineData = [
         text: 'Created as part of a team of students as part of computer science capstone. Taught other students how to use GitHub in the process.',
         techTags: [
             'css',
-            'c#',
+            'csharp',
             'javascript',
             'aspnet'
         ],
@@ -95,9 +97,4 @@ export const timelineData = [
             text: 'Learn about iD Tech'
         }
     },
-    {
-        title: 'Graduated from high school',
-        date: 'May 2017',
-        text: 'yay for me!'
-    }
 ];

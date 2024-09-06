@@ -15,6 +15,13 @@
     --timelineColor: #597252;
 }
 
+html {
+    background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 .App {
 	white-space: pre-wrap;
 	text-align: center;
@@ -51,13 +58,10 @@ a {
 }
 
 .topBlock {
-	padding: 40px;
+	padding: 40px 40px 20px;
 
 	color: var(--textColor2);
-	background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+
 }
 
 .topBlockContent {
@@ -135,6 +139,13 @@ a {
 	vertical-align: middle;
 }
 
+.middleBlock {
+    margin: 20px 0;
+    padding-bottom: 40px;
+
+    background-color: white;
+}
+
 .middleBlock title {
     padding: 40px 0;
     font-size: 20px;
@@ -144,12 +155,7 @@ a {
 
 footer {
 	color: var(--textColor2);
-	padding: 20px 30px;
-
-	background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	padding: 0 40px 20px;
 }
 
 footer p {
@@ -162,7 +168,7 @@ footer p {
 	backdrop-filter: blur(7px);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 767px) {
     .middleBlock title {
         padding: 0;
         height: 0;
@@ -172,6 +178,10 @@ footer p {
 
     .topBlock {
         padding: 20px 20px 40px 20px;
+    }
+
+    .middleBlock {
+        padding: 0;
     }
 
     .checkTheseOut {

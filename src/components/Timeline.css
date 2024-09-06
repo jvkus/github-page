@@ -9,14 +9,13 @@
 }
 
 /* Line in the middle */
+/* TODO: Adjust when timeline data is changed. */
 .timeline::after {
 	background-color: var(--timelineColor);
 	content: '';
 	position: absolute;
 	left: calc(50% - 2px);
 	width: 4px;
-	height: calc(100% - 125px);
-	margin-top: 70px;
 }
 
 .timeline-item {
@@ -197,6 +196,8 @@
         border-bottom: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+
+        padding-bottom: 50px;
     }
 
     .timeline::before { /* Trailing off dotted line */
