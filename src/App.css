@@ -2,7 +2,7 @@
 	--navColor: #131b1fc4;
 	--mainTextColor: #ffffff;
 	--secondaryTextColor: #000000;
-    --tertiaryTextColor: #ced1d8;
+	--tertiaryTextColor: #ced1d8;
 
 	--linkColor1: #fff692;
 	--linkColorHover1: #ffffff;
@@ -12,21 +12,21 @@
 	--linkColorHover2: #92ffdc;
 	--linkColorActive2: #ff8620;
 
-    --linkColor3: #0b8e9d;
+	--linkColor3: #0b8e9d;
 	--linkColorHover3: #014070;
 	--linkColorActive3: #ff8620;
 
-    --timelineColor: #3c4a77;
-    --timelineBackgroundColor: #e9e5de;
+	--timelineColor: #3c4a77;
+	--timelineBackgroundColor: #e9e5de;
 }
 
 html {
-    background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
+	background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-    color: var(--mainTextColor);
+	color: var(--mainTextColor);
 }
 
 .App {
@@ -59,11 +59,11 @@ ul {
 }
 
 a {
-    text-decoration: dotted underline;
+	text-decoration: dotted underline;
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.25rem;
 
-    transition: color 0.1s;
+	transition: color 0.1s;
 }
 
 .topBlock {
@@ -79,7 +79,7 @@ a {
 	text-shadow: 0 1px 3px black;
 
 	background-color: rgba(14, 22, 25, 0.39);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
 }
 
@@ -147,29 +147,29 @@ a {
 }
 
 .middleBlock {
-    margin: 20px 0;
-    padding-bottom: 40px;
+	margin: 20px 0;
+	padding-bottom: 40px;
 
-    color: var(--secondaryTextColor);
-    background-color: var(--timelineBackgroundColor);
+	color: var(--secondaryTextColor);
+	background-color: var(--timelineBackgroundColor);
 }
 
 .middleBlock title {
-    padding: 30px 0;
-    border-radius: 5px;
+	padding: 30px 0;
+	border-radius: 5px;
 
-    font-size: 20px;
-    font-weight: 600;
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .middleBlock title div {
-    border-radius: 5px;
-    padding: 20px 30px;
-    width: max-content;
+	border-radius: 5px;
+	padding: 20px 30px;
+	width: max-content;
 
-    margin: auto;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+	margin: auto;
+	background-color: #ffffff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 .middleBlock a:link,
@@ -198,32 +198,32 @@ footer p {
 	text-shadow: 0 1px 3px black;
 
 	background-color: rgba(14, 22, 25, 0.39);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
 }
 
 @media (max-width: 767px) {
-    .middleBlock title {
-        padding: 0;
-        height: 0;
-        position: relative;
-        top: 20px;
-    }
+	.middleBlock title {
+		padding: 0;
+		height: 0;
+		position: relative;
+		top: 20px;
+	}
 
-    .topBlock {
-        padding: 20px 20px 40px 20px;
-    }
+	.topBlock {
+		padding: 20px 20px 40px 20px;
+	}
 
-    .middleBlock {
-        padding: 0;
-    }
+	.middleBlock {
+		padding: 0;
+	}
 
-    .checkTheseOut {
-        flex-direction: column;
-        align-items: center;
-    }
+	.checkTheseOut {
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .timeline {
-        margin-top: 0;
-    }
+	.timeline {
+		margin-top: 0;
+	}
 }

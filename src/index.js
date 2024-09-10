@@ -6,21 +6,13 @@ import ErrorPage from './error-page';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, createBrowserRouter } from 'react-router-dom';
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />,
-        errorElement: <ErrorPage />,  
-    },
-]);
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-  </React.StrictMode>
+	<React.StrictMode>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</React.StrictMode>
 );
 
 reportWebVitals();

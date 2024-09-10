@@ -11,25 +11,25 @@
 .timeline-item::before {
 	background-color: var(--timelineColor);
 	content: '';
-    align-self: flex-start;
+	align-self: flex-start;
 	position: absolute;
-    top: 0;
-    left: -30px;
+	top: 0;
+	left: -30px;
 	width: 4px;
-    height: 120%;
+	height: 120%;
 }
 
 .timeline-item:nth-child(even)::before {
-    align-self: flex-end;
-    left: calc(100% + 24px);
+	align-self: flex-end;
+	left: calc(100% + 24px);
 }
 
 .timeline-item:first-child::before {
-    top: 50%;
+	top: 50%;
 }
 
 .timeline-item:last-child::before {
-    bottom: 50%;
+	bottom: 50%;
 }
 
 /* ------------------- */
@@ -111,7 +111,7 @@
 }
 
 .timeline-item-content time {
-    margin: 1em 0;
+	margin: 1em 0;
 
 	color: #777;
 	font-size: 12px;
@@ -128,15 +128,15 @@
 	font-size: 14px;
 	font-weight: bold;
 
-    margin-top: 0.8em;
+	margin-top: 0.8em;
 }
 
 .timeline-item .techStack img {
-    margin: 0 0 0 7px;
+	margin: 0 0 0 7px;
 }
 
 .timeline-item:nth-child(odd) .techStack img {
-    margin: 0 7px 0 0;
+	margin: 0 7px 0 0;
 }
 
 .timeline-item-content a::after {
@@ -169,83 +169,88 @@
 
 /* Alternate timeline layout for smaller screens */
 @media only screen and (max-width: 767px) {
-    .timeline-item-content {
-        width: 100%;
-    }
+	.timeline-item-content {
+		width: 100%;
+	}
 
-    .circle {
-        right: -50px;
-    }
+	.circle {
+		right: -50px;
+	}
 
-    .timeline-item:nth-child(odd) .circle {
-        left: -50px;
-    }
+	.timeline-item:nth-child(odd) .circle {
+		left: -50px;
+	}
 
-    /* Curvy borders */
-    .timeline-item {    /* All left elements */
-        margin: -5px 30px 0 30px;
-        padding: 35px;
-        width: calc(100% - 200px);
+	/* Curvy borders */
+	.timeline-item {
+		/* All left elements */
+		margin: -5px 30px 0 30px;
+		padding: 35px;
+		width: calc(100% - 200px);
 
-        top: 0;
+		top: 0;
 
-        border-style: solid;
-        border-color: var(--timelineColor);
-        border-width: 5px 5px 5px 0;
-        border-radius: 0 50px 50px 0;
-    }
+		border-style: solid;
+		border-color: var(--timelineColor);
+		border-width: 5px 5px 5px 0;
+		border-radius: 0 50px 50px 0;
+	}
 
-    .timeline-item:nth-child(odd) { /* All right elements */
-        border-width: 5px 0 5px 5px;
-        border-radius: 50px 0 0 50px;
-    }
+	.timeline-item:nth-child(odd) {
+		/* All right elements */
+		border-width: 5px 0 5px 5px;
+		border-radius: 50px 0 0 50px;
+	}
 
-    .timeline-item:first-child { /* First element */
-        border-style: solid dotted;
-        border-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+	.timeline-item:first-child {
+		/* First element */
+		border-style: solid dotted;
+		border-top: 0;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
 
-    .timeline-item:last-child { /* Last element */
-        border-style: solid dotted;
-        border-bottom: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+	.timeline-item:last-child {
+		/* Last element */
+		border-style: solid dotted;
+		border-bottom: 0;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 
-        padding-bottom: 50px;
-    }
+		padding-bottom: 50px;
+	}
 
-    .timeline::before { /* Trailing off dotted line */
-        content: '';
-        border-style: none none none dotted;
-        border-color: var(--timelineColor);
-        border-width: 5px;
-        width: calc(100% - 65px);
-        height: 80px;
+	.timeline::before {
+		/* Trailing off dotted line */
+		content: '';
+		border-style: none none none dotted;
+		border-color: var(--timelineColor);
+		border-width: 5px;
+		width: calc(100% - 65px);
+		height: 80px;
 
-        align-self: center;
-    }
+		align-self: center;
+	}
 
-    /* Align all card contents in alternating style */
-    .timeline-item-content {
-        text-align: right;
-    }
+	/* Align all card contents in alternating style */
+	.timeline-item-content {
+		text-align: right;
+	}
 
 	.timeline-item:nth-child(odd) .timeline-item-content {
 		text-align: left;
 	}
 
-    .timeline-item {
-        align-self: flex-end;
-    }
+	.timeline-item {
+		align-self: flex-end;
+	}
 
-    .timeline-item:nth-child(odd) {
-        align-self: flex-start;
-    }
+	.timeline-item:nth-child(odd) {
+		align-self: flex-start;
+	}
 
-    /* Delete center line */
-    .timeline-item::before {
-        display: none;
-    }
+	/* Delete center line */
+	.timeline-item::before {
+		display: none;
+	}
 }
