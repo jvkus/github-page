@@ -15,56 +15,51 @@
 	--linkColor3: #0b8e9d;
 	--linkColorHover3: #014070;
 	--linkColorActive3: #ff8620;
-
+    
 	--timelineColor: #3c4a77;
 	--timelineBackgroundColor: #e9e5de;
 }
 
 html {
 	background-image: url('./assets/header-background-joshua-sortino-unsplash.jpg');
-	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-
+	background-size: cover;
 	color: var(--mainTextColor);
 }
 
 .App {
-	white-space: pre-wrap;
-	text-align: center;
-
-	font-family: 'Chivo Mono', monospace;
 	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
-
 	scroll-behavior: smooth;
+	font-family: 'Chivo Mono', monospace;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	white-space: pre-wrap;
 }
 
 header p {
+	max-width: 700px;
 	margin: 0 auto;
 	padding-bottom: 20px;
-	max-width: 700px;
 }
 
 title {
-	width: 100%;
-
 	display: block;
+	width: 100%;
 }
 
 ul {
-	list-style-type: none;
+	margin: 0;
 	padding: 0;
-    margin: 0;
+	list-style-type: none;
 }
 
 a {
-	text-decoration: dotted underline;
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.25rem;
-
 	transition: color 0.1s;
+	text-decoration: dotted underline;
 }
 
 .topBlock {
@@ -72,16 +67,14 @@ a {
 }
 
 .topBlockContent {
-	border-radius: 5px;
-	margin-top: 20px;
-	padding: 30px;
-
-	line-height: 150%;
-	text-shadow: 0 1px 3px black;
-
-	background-color: rgba(14, 22, 25, 0.39);
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
+	margin-top: 20px;
+	padding: 30px;
+	background-color: rgba(14, 22, 25, 0.39);
+	border-radius: 5px;
+	line-height: 150%;
+	text-shadow: 0 1px 3px black;
 }
 
 .topBlockContent a:link,
@@ -99,28 +92,27 @@ a {
 }
 
 .checkTheseOut {
-	padding: 20px;
-	width: 100%;
-
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: flex-start;
+	width: 100%;
+	padding: 20px;
 	text-align: center;
 }
 
 .checkOut1 title,
 .checkOut2 title,
 .checkOut3 title {
-    padding-bottom: 10px;
+	padding-bottom: 10px;
 	font-weight: 600;
 }
 
 .checkOut1,
 .checkOut2,
 .checkOut3 {
-	padding: 10px 20px 20px 20px;
 	justify-content: space-evenly;
+	padding: 10px 20px 20px 20px;
 }
 
 .linkHub {
@@ -129,13 +121,12 @@ a {
 }
 
 .techStackBlock {
-	padding: 0 30px;
-
 	display: flex;
 	flex-flow: row wrap;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	gap: 10px;
+	padding: 0 30px;
 }
 
 .techStackBlock .techStack img {
@@ -151,27 +142,24 @@ a {
 .middleBlock {
 	margin: 20px 0;
 	padding-bottom: 40px;
-
-	color: var(--secondaryTextColor);
 	background-color: var(--timelineBackgroundColor);
+	color: var(--secondaryTextColor);
 }
 
 .middleBlock title {
 	padding: 30px 0;
 	border-radius: 5px;
-
 	font-size: 20px;
 	font-weight: 600;
 }
 
 .middleBlock title div {
-	border-radius: 5px;
-	padding: 20px 30px;
-	width: max-content;
-
-	margin: auto;
-	background-color: #ffffff;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+	width: max-content;
+	margin: auto;
+	padding: 20px 30px;
+	background-color: #ffffff;
+	border-radius: 5px;
 }
 
 .middleBlock a:link,
@@ -189,27 +177,26 @@ a {
 }
 
 footer {
-	color: var(--tertiaryTextColor);
 	padding: 0 40px 20px;
+	color: var(--tertiaryTextColor);
 }
 
 footer p {
-	margin: 0;
-	border-radius: 10px;
-	padding: 15px;
-	text-shadow: 0 1px 3px black;
-
-	background-color: rgba(14, 22, 25, 0.39);
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
+	margin: 0;
+	padding: 15px;
+	background-color: rgba(14, 22, 25, 0.39);
+	border-radius: 10px;
+	text-shadow: 0 1px 3px black;
 }
 
 @media (max-width: 767px) {
 	.middleBlock title {
-		padding: 0;
-		height: 0;
 		position: relative;
 		top: 20px;
+		height: 0;
+		padding: 0;
 	}
 
 	.topBlock {

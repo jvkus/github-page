@@ -1,15 +1,12 @@
 .navBar {
-	width: 100%;
-	border-radius: 5px;
-
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	display: flex;
 	justify-content: space-evenly;
-
+	width: 100%;
+	background-color: var(--navColor);
+	border-radius: 5px;
 	font-size: 18px;
 	font-weight: 400;
-
-	background-color: var(--navColor);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .navBar ul {
@@ -20,8 +17,8 @@
 }
 
 .navBar ul li {
-	list-style-type: none;
 	padding: 0 50px;
+	list-style-type: none;
 }
 
 .navBar a {
@@ -49,9 +46,9 @@
 	}
 
 	.navBar ul {
+		flex-direction: column;
 		margin: 10px;
 		padding: 0;
-		flex-direction: column;
 	}
 
 	.navBar ul li {
