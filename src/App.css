@@ -56,6 +56,7 @@ title {
 ul {
 	list-style-type: none;
 	padding: 0;
+    margin: 0;
 }
 
 a {
@@ -111,6 +112,7 @@ a {
 .checkOut1 title,
 .checkOut2 title,
 .checkOut3 title {
+    padding-bottom: 10px;
 	font-weight: 600;
 }
 
