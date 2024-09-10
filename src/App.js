@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import Header from "./Header";
 import LinkHub from './components/LinkHub';
 import TechStack from './components/TechStack';
-import  Timeline, { setTimelineLineHeight } from './components/Timeline';
+import  Timeline from './components/Timeline';
 import { techStackData } from './data/techstack_data';
 import { Routes, Route, Link } from 'react-router-dom';
 
@@ -72,7 +72,9 @@ function Home () {
 
             <div className='middleBlock'>
                 <title>
-                What's my story?
+                    <div>
+                        What's my story?
+                    </div>
                 </title>
                 <Timeline />
             </div>
@@ -112,24 +114,31 @@ function Credits() {
                             </a>
                         </li>
                         <li>
-                            Website background by
+                            Website background by&nbsp;
                             <a href="https://unsplash.com/@sortino?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                                 Joshua Sortino
                             </a>
-                            on 
+                            &nbsp;on&nbsp;
                             <a href="https://unsplash.com/photos/aerial-view-of-mountains-gii7lF4y0WY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
                                 Unsplash
                             </a>
                         </li>
                         <li>
-                            Timeline code created with much reference to
+                            Timeline code created with much reference to&nbsp;
                             <a href="https://www.florin-pop.com/timeline">
                                 Florin Pop
                             </a>
-                            . 
+                            .&nbsp; 
                             <a href="https://archive.is/fGJvo">
                                 View archived page
                             </a>
+                        </li>
+                        <li>
+                            Mobile timeline code created with reference to&nbsp;
+                            <a href="https://codepen.io/j471n/pen/vYJaLvm">
+                                Jatin Sharma
+                            </a>
+                            .
                         </li>
                     </ul>
                 </div>

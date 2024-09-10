@@ -7,8 +7,6 @@ const links = [
     { title: 'Hacker Mode', link: '/hackermode', id: 2 }
 ];
 
-// TODO: Fix styling so that the menu works properly
-
 export default function NavBar() {
     const navBarItems = links.map(link =>
         <li key={link.id}>

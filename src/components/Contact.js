@@ -4,7 +4,6 @@ import './Contact.css';
 const email = 'joannavkus+github@gmail.com';
 const maskCharacter = '•';
 
-// TODO: Style this
 // Referenced this blog post to build this
 // https://kenanbek.medium.com/mask-email-addresses-with-custom-react-component-for-display-purposes-f066ed0c64b9
 

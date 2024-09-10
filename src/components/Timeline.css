@@ -1,6 +1,5 @@
 /* Created with reference to Jatin Sharma's code
     https://codepen.io/j471n/pen/vYJaLvm */
-/* TODO: credit that properly on web page */
 
 .timeline {
 	display: flex;
@@ -9,14 +8,31 @@
 }
 
 /* Line in the middle */
-/* TODO: Adjust when timeline data is changed. */
-.timeline::after {
+.timeline-item::before {
 	background-color: var(--timelineColor);
 	content: '';
+    align-self: flex-start;
 	position: absolute;
-	left: calc(50% - 2px);
+    top: 0;
+    left: -30px;
 	width: 4px;
+    height: 120%;
 }
+
+.timeline-item:nth-child(even)::before {
+    align-self: flex-end;
+    left: calc(100% + 24px);
+}
+
+.timeline-item:first-child::before {
+    top: 50%;
+}
+
+.timeline-item:last-child::before {
+    bottom: 50%;
+}
+
+/* ------------------- */
 
 .timeline-item {
 	display: flex;
@@ -35,13 +51,13 @@
 }
 
 .timeline-item-content {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	padding: 15px;
+	padding: 20px;
 	position: relative;
 	width: 400px;
 	max-width: 70%;
@@ -95,7 +111,7 @@
 }
 
 .timeline-item-content time {
-    margin: 0.5em 0;
+    margin: 1em 0;
 
 	color: #777;
 	font-size: 12px;
@@ -124,7 +140,7 @@
 }
 
 .timeline-item-content a::after {
-	content: ' ►';
+	content: ' ➺';
 	font-size: 12px;
 }
 
@@ -229,7 +245,7 @@
     }
 
     /* Delete center line */
-    .timeline::after {
+    .timeline-item::before {
         display: none;
     }
 }

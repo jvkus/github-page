@@ -1,18 +1,23 @@
 :root {
-	--color1: #2f3a29;
-	--color2: #393939;
-	--textColor1: #000000;
-	--textColor2: #ffffff;
+	--navColor: #131b1fc4;
+	--mainTextColor: #ffffff;
+	--secondaryTextColor: #000000;
+    --tertiaryTextColor: #ced1d8;
 
-	--linkColor1: #d8bf92;
-	--linkColorHover1: #ff009d;
-	--linkColorActive1: #20a7e6;
+	--linkColor1: #fff692;
+	--linkColorHover1: #ffffff;
+	--linkColorActive1: #ffb500;
 
-	--linkColor2: #fffcdc;
-	--linkColorHover2: #ffceec;
-	--linkColorActive2: #c1ddeb;
+	--linkColor2: #ffc051;
+	--linkColorHover2: #92ffdc;
+	--linkColorActive2: #ff8620;
 
-    --timelineColor: #597252;
+    --linkColor3: #0b8e9d;
+	--linkColorHover3: #014070;
+	--linkColorActive3: #ff8620;
+
+    --timelineColor: #3c4a77;
+    --timelineBackgroundColor: #e9e5de;
 }
 
 html {
@@ -20,6 +25,8 @@ html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+
+    color: var(--mainTextColor);
 }
 
 .App {
@@ -55,38 +62,38 @@ a {
     text-decoration: dotted underline;
 	text-decoration-skip-ink: auto;
 	text-underline-offset: 0.25rem;
+
+    transition: color 0.1s;
 }
 
 .topBlock {
 	padding: 40px 40px 20px;
-
-	color: var(--textColor2);
-
 }
 
 .topBlockContent {
 	border-radius: 5px;
-	margin-top: 15px;
+	margin-top: 20px;
 	padding: 30px;
 
 	line-height: 150%;
 	text-shadow: 0 1px 3px black;
 
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(14, 22, 25, 0.39);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
-}
-
-.topBlockContent a:active {
-	color: var(--linkColor2);
 }
 
 .topBlockContent a:link,
 .topBlockContent a:visited {
-	color: var(--linkColorHover2);
+	color: var(--linkColor2);
 }
 
 .topBlockContent a:hover,
 .topBlockContent a:focus {
+	color: var(--linkColorHover2);
+}
+
+.topBlockContent a:active {
 	color: var(--linkColorActive2);
 }
 
@@ -143,18 +150,44 @@ a {
     margin: 20px 0;
     padding-bottom: 40px;
 
-    background-color: white;
+    color: var(--secondaryTextColor);
+    background-color: var(--timelineBackgroundColor);
 }
 
 .middleBlock title {
-    padding: 40px 0;
+    padding: 30px 0;
+    border-radius: 5px;
+
     font-size: 20px;
     font-weight: 600;
-    text-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.middleBlock title div {
+    border-radius: 5px;
+    padding: 20px 30px;
+    width: max-content;
+
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.middleBlock a:link,
+.middleBlock a:visited {
+	color: var(--linkColor3);
+}
+
+.middleBlock a:hover,
+.middleBlock a:focus {
+	color: var(--linkColorHover3);
+}
+
+.middleBlock a:active {
+	color: var(--linkColorActive3);
 }
 
 footer {
-	color: var(--textColor2);
+	color: var(--tertiaryTextColor);
 	padding: 0 40px 20px;
 }
 
@@ -164,7 +197,8 @@ footer p {
 	padding: 15px;
 	text-shadow: 0 1px 3px black;
 
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(14, 22, 25, 0.39);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
 }
 
@@ -173,7 +207,7 @@ footer p {
         padding: 0;
         height: 0;
         position: relative;
-        top: 40px;
+        top: 20px;
     }
 
     .topBlock {

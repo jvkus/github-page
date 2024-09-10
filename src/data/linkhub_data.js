@@ -4,7 +4,7 @@ export const linkHubData = [
     {
         title: 'Resume',
         img: 'resume-icon_64px.png',
-        url: 'https://example.com'
+        url: require(`../assets/resume.pdf`)
     },
     {
         title: 'LinkedIn',
