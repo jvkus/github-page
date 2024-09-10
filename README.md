@@ -41,6 +41,10 @@ See the docs on [deployment](https://facebook.github.io/create-react-app/docs/de
 
 Run after running `npm run build`. Analyzes bundle size to understand where code bloat is coming from.
 
+### `npm run deploy`
+
+Builds the app and deploys it to GitHubPages.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
