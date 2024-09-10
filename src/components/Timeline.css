@@ -1,6 +1,5 @@
 /* Created with reference to Jatin Sharma's code
     https://codepen.io/j471n/pen/vYJaLvm */
-/* TODO: credit that properly on web page */
 
 .timeline {
 	display: flex;
@@ -9,80 +8,96 @@
 }
 
 /* Line in the middle */
-.timeline::after {
-	background-color: var(--timelineColor);
+.timeline-item::before {
 	content: '';
+	align-self: flex-start;
 	position: absolute;
-	left: calc(50% - 2px);
+	top: 0;
+	left: -30px;
 	width: 4px;
-	height: calc(100% - 125px);
-	margin-top: 70px;
+	height: 120%;
+	background-color: var(--timelineColor);
 }
+
+.timeline-item:nth-child(even)::before {
+	align-self: flex-end;
+	left: calc(100% + 24px);
+}
+
+.timeline-item:first-child::before {
+	top: 50%;
+}
+
+.timeline-item:last-child::before {
+	bottom: 50%;
+}
+
+/* ------------------- */
 
 .timeline-item {
 	display: flex;
 	justify-content: flex-end;
-	margin-right: 30px;
 	position: relative;
-	margin: 10px 0;
 	width: calc(50% - 27px);
+	margin: 10px 0;
+	margin-right: 30px;
 }
 
 .timeline-item:nth-child(odd) {
-	align-self: flex-end;
 	justify-content: flex-start;
-	margin-left: 30px;
+	align-self: flex-end;
 	margin-right: 0;
+	margin-left: 30px;
 }
 
 .timeline-item-content {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-	border-radius: 5px;
-	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	padding: 15px;
 	position: relative;
 	width: 400px;
 	max-width: 70%;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
 	text-align: right;
 }
 
 /* Arrows pointing to timeline */
 .timeline-item-content::after {
-	content: ' ';
-	background-color: #fff;
 	box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+	content: ' ';
 	position: absolute;
-	right: -7.5px;
 	top: calc(50% - 7.5px);
+	right: -7.5px;
 	transform: rotate(45deg);
 	width: 15px;
 	height: 15px;
+	background-color: #fff;
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content {
-	text-align: left;
 	align-items: flex-start;
+	text-align: left;
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content::after {
-	right: auto;
-	left: -7.5px;
 	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+	left: -7.5px;
+	right: auto;
 }
 
 .timeline-item-content .tag {
-	color: #fff;
-	font-size: 12px;
-	font-weight: bold;
+	position: absolute;
 	top: 5px;
 	left: 5px;
-	letter-spacing: 1px;
 	padding: 5px;
-	position: absolute;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content .tag {
@@ -96,54 +111,52 @@
 }
 
 .timeline-item-content time {
-    margin: 0.5em 0;
-
-	color: #777;
+	margin: 1em 0;
 	font-size: 12px;
 	font-weight: bold;
+	color: #777;
 }
 
 .timeline-item-content p {
+	margin: 1em 0 0 0;
 	font-size: 16px;
 	line-height: 1.4em;
-	margin: 1em 0 0 0;
 }
 
 .timeline-item-content a {
+	margin-top: 0.8em;
 	font-size: 14px;
 	font-weight: bold;
-
-    margin-top: 0.8em;
 }
 
 .timeline-item .techStack img {
-    margin: 0 0 0 7px;
+	margin: 0 0 0 7px;
 }
 
 .timeline-item:nth-child(odd) .techStack img {
-    margin: 0 7px 0 0;
+	margin: 0 7px 0 0;
 }
 
 .timeline-item-content a::after {
-	content: ' ►';
+	content: ' ➺';
 	font-size: 12px;
 }
 
 .circle {
-	background-color: #fff;
-	border: 3px solid var(--timelineColor);
-	border-radius: 50%;
 	position: absolute;
+	z-index: 100;
 	top: calc(50% - 13px);
 	right: -40px;
 	width: 20px;
 	height: 20px;
-	z-index: 100;
+	background-color: #fff;
+	border: 3px solid var(--timelineColor);
+	border-radius: 50%;
 }
 
 .timeline-item:nth-child(odd) .circle {
-	right: auto;
 	left: -40px;
+	right: auto;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -154,81 +167,79 @@
 
 /* Alternate timeline layout for smaller screens */
 @media only screen and (max-width: 767px) {
-    .timeline-item-content {
-        width: 100%;
-    }
+	.timeline-item-content {
+		width: 100%;
+	}
 
-    .circle {
-        right: -50px;
-    }
+	.circle {
+		right: -50px;
+	}
 
-    .timeline-item:nth-child(odd) .circle {
-        left: -50px;
-    }
+	.timeline-item:nth-child(odd) .circle {
+		left: -50px;
+	}
 
-    /* Curvy borders */
-    .timeline-item {    /* All left elements */
-        margin: -5px 30px 0 30px;
-        padding: 35px;
-        width: calc(100% - 200px);
+	/* Curvy borders */
+	.timeline-item {
+		top: 0;
+		width: calc(100% - 200px);
+		margin: -5px 30px 0 30px;
+		padding: 35px;
+		border-width: 5px 5px 5px 0;
+		border-style: solid;
+		border-color: var(--timelineColor);
+		border-radius: 0 50px 50px 0;
+	}
 
-        top: 0;
+	.timeline-item:nth-child(odd) {
+		border-width: 5px 0 5px 5px;
+		border-radius: 50px 0 0 50px;
+	}
 
-        border-style: solid;
-        border-color: var(--timelineColor);
-        border-width: 5px 5px 5px 0;
-        border-radius: 0 50px 50px 0;
-    }
+	.timeline-item:first-child {
+		border-top: 0;
+		border-style: solid dotted;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
 
-    .timeline-item:nth-child(odd) { /* All right elements */
-        border-width: 5px 0 5px 5px;
-        border-radius: 50px 0 0 50px;
-    }
+	.timeline-item:last-child {
+		padding-bottom: 50px;
+		border-bottom: 0;
+		border-style: solid dotted;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
 
-    .timeline-item:first-child { /* First element */
-        border-style: solid dotted;
-        border-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+	.timeline::before {
+		content: '';
+		align-self: center;
+		width: calc(100% - 65px);
+		height: 80px;
+		border-width: 5px;
+		border-style: none none none dotted;
+		border-color: var(--timelineColor);
+	}
 
-    .timeline-item:last-child { /* Last element */
-        border-style: solid dotted;
-        border-bottom: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .timeline::before { /* Trailing off dotted line */
-        content: '';
-        border-style: none none none dotted;
-        border-color: var(--timelineColor);
-        border-width: 5px;
-        width: calc(100% - 65px);
-        height: 80px;
-
-        align-self: center;
-    }
-
-    /* Align all card contents in alternating style */
-    .timeline-item-content {
-        text-align: right;
-    }
+	/* Align all card contents in alternating style */
+	.timeline-item-content {
+		text-align: right;
+	}
 
 	.timeline-item:nth-child(odd) .timeline-item-content {
 		text-align: left;
 	}
 
-    .timeline-item {
-        align-self: flex-end;
-    }
+	.timeline-item {
+		align-self: flex-end;
+	}
 
-    .timeline-item:nth-child(odd) {
-        align-self: flex-start;
-    }
+	.timeline-item:nth-child(odd) {
+		align-self: flex-start;
+	}
 
-    /* Delete center line */
-    .timeline::after {
-        display: none;
-    }
+	/* Delete center line */
+	.timeline-item::before {
+		display: none;
+	}
 }

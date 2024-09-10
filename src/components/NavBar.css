@@ -1,57 +1,57 @@
 .navBar {
-    width: 100%;
-    height: 50px;
-    border-radius: 5px;
-
-    display: flex;
-    justify-content: space-evenly;
-
-    font-weight: 700;
-
-    background-color: var(--color1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	background-color: var(--navColor);
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .navBar ul {
-    display: flex;
-    flex-wrap: row wrap;
-    float: left;
-    margin: 20 0px;
-    padding: 0 25px;
+	display: flex;
+	float: left;
+	margin: 15px 0;
+	padding: 0 25px;
 }
 
 .navBar ul li {
-    list-style-type: none;
-    padding: 0 50px;
+	padding: 0 50px;
+	list-style-type: none;
 }
 
 .navBar a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-.navBar a:link, .navBar a:visited {
-    color: var(--linkColor1);
+.navBar a:link,
+.navBar a:visited {
+	color: var(--linkColor1);
+	text-shadow: 0 2px 3px black;
 }
 
-.navBar a:hover, .navBar a:focus {
-    color: var(--linkColorHover1);
+.navBar a:hover,
+.navBar a:focus {
+	color: var(--linkColorHover1);
 }
 
 .navBar a:active {
-    color: var(--linkColorActive1);
+	color: var(--linkColorActive1);
 }
 
-@media (max-width: 650px) {
-    .navBar {
-        height: auto;
-    }
+@media (max-width: 767px) {
+	.navBar {
+		height: auto;
+	}
 
-    .navBar ul {
-        margin: 10px;
-        padding: 0;
-        flex-direction: column;
-    }
+	.navBar ul {
+		flex-direction: column;
+		margin: 10px;
+		padding: 0;
+	}
 
-    .navBar ul li {
-        padding: 10px 0;
-    }
+	.navBar ul li {
+		padding: 10px 0;
+	}
 }

@@ -1,27 +1,24 @@
 import './NavBar.css';
+import { Link } from 'react-router-dom';
 
 const links = [
-    { title: 'Home', link:'/', id: 0 },
-    { title: 'Credits', link:'/Credits.html', id: 1 },
-    { title: 'Hacker Mode', link: '/Credits.html', id: 2 }
+	{ title: 'Home', link: '/', id: 0 },
+	{ title: 'Credits', link: '/credits', id: 1 },
+	{ title: 'Hacker Mode', link: '/hackermode', id: 2 },
 ];
 
-// TODO: Fix styling so that the menu works properly
-
 export default function NavBar() {
-    const navBarItems = links.map(link =>
-        <li key={link.id}>
-            <a href={link.link}>
-                {link.title}
-            </a>
-        </li>
-    );
+	const navBarItems = links.map((link) => (
+		<li key={link.id}>
+			<Link to={link.link}>{link.title}</Link>
+		</li>
+	));
 
-    return (
-           <div>
-            <div className='navBar'>
-                <ul>{navBarItems}</ul>
-            </div>
-        </div>
-    );
+	return (
+		<div>
+			<div className="navBar">
+				<ul>{navBarItems}</ul>
+			</div>
+		</div>
+	);
 }
