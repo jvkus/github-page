@@ -16,14 +16,14 @@ export const linkHubData = [
 		img: 'github-logo_64px.png',
 		url: 'https://github.com/jvkus',
 	},
+    {
+		title: 'Blog',
+		img: 'blog-icon_64px.png',
+		url: 'https://jvkus.blog',
+	},
 	{
 		title: 'Mastodon',
 		img: 'mastodon-logo_64px.png',
 		url: 'https://infosec.exchange/@jvkus',
-	},
-	{
-		title: 'Blog [soon]',
-		img: 'blog-icon_64px.png',
-		url: 'https://example.com',
-	},
+	}
 ];
