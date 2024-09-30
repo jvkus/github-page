@@ -47,7 +47,7 @@ function Home() {
 							<ul>
 								<li>Birding</li>
 								<li>Hydroponics</li>
-								<li>Consumer research</li>
+								<li>Consumer-oriented research</li>
 								<li>Painting</li>
 								<li>Privacy and security</li>
 								<li>Skiing</li>
